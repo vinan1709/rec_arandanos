@@ -10,13 +10,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Gestión de empleados</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Gestión de empleados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="recoleccion.html">Recolección</a>
+                    <a class="nav-link" href="views/recoleccion.php">Recolección</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="reporte.html">Reporte</a>
+                    <a class="nav-link" href="views/reporte.php">Reporte</a>
                 </li>
             </ul>
         </div>
@@ -26,26 +26,29 @@
 
 <div class="container-md">
     <form method="post">
-        <div class="mb-3">
+    <div class="row">
+            <div class="col-md-6"><div class="mb-3">
             <label for="name" class="form-label">Nombres</label>
             <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="apellidos" class="form-label">Apellidos</label>
             <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
+        </div></div>
+            <div class="col-md-6"><div class="mb-3">
             <label for="documento" class="form-label">Documento</label>
             <input type="text" class="form-control" id="documento" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Cargo</label>
             <select class="form-select" aria-label="Default select example">
-                <option selected>Recolector</option>
-                <option value="1">Encargado</option>
-                <option value="2">Recolector</option>
+                <option value="1">Recolector</option>
+                <option value="2">Encargado</option>
             </select>
-        </div>
+        </div></div>
+          </div>
+        
+    
 
         <input type="button" value="Agregar" class="adduser btn btn-primary" />
     </form>
@@ -57,27 +60,13 @@
             <th scope="col">#</th>
             <th scope="col">Nombres</th>
             <th scope="col">Apellidos</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Opcion</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
+        <tbody class="cuerpo_tabla">
+        
         </tbody>
     </table>
 </div>
