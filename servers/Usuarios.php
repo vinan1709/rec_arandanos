@@ -11,9 +11,9 @@ if($_REQUEST['opcion'] == 'registro') { //Registro Usuarios
     $consulta=mysqli_query($conexion, $sql);
 
     if ($consulta)
-        return true;
+        echo 'true';
     else
-        return false;
+        echo 'false';
 
 }
 
