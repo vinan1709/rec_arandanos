@@ -21,7 +21,7 @@ switch ($_REQUEST['opcion']) {
         echo "i es un pastel";
         break;
     case "usuarios":
-        $sql="select u.id_usuario, u.nombres, u.apellidos, tc.nombre_cargo from usuarios u inner join tipo_cargo tc on tc.id = u.cargo_id";
+        $sql="select u.id_usuario, u.nombres, u.apellidos, u.documento, tc.nombre_cargo from usuarios u inner join tipo_cargo tc on tc.id = u.cargo_id";
 
         $consulta=mysqli_query($conexion, $sql);
 
