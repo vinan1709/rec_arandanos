@@ -1,6 +1,7 @@
 <?php
 require_once '../config/databaseconnect.php';
 
+/** Todo::switch para seleccionar que opcion se debe usar (Registro, Recoleccion)*/
 switch ($_REQUEST['opcion']) {
     case "registro":
         $sql="

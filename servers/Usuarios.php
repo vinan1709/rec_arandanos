@@ -1,6 +1,7 @@
 <?php
 require_once '../config/databaseconnect.php';
 
+/** Todo::switch para seleccionar que opcion se debe usar (Registro, Usuarios)*/
 switch ($_REQUEST['opcion']) {
     case "registro":
         $sql="
@@ -35,27 +36,6 @@ switch ($_REQUEST['opcion']) {
 }
 
 
-if($_REQUEST['opcion'] == 'modificar') { //Modificar Usuarios
-
-    $sql="update usuarios set  ";
-
-    $consulta=mysqli_query($conexion, $sql);
-
-    $row = mysqli_fetch_array($consulta);
-
-    var_dump($row);
-}
-
-if($_REQUEST['opcion'] == 'consulta') { //consultar Usuario
-
-    $sql="select * from usuarios";
-
-    $consulta=mysqli_query($conexion, $sql);
-
-    $row = mysqli_fetch_array($consulta);
-
-    return json_encode($row);
-}
 
 
 
