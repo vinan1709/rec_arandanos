@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+//Ajax para recibir data de la tabla
     jQuery.ajax({
         method: "GET",
         url: "../servers/Recoleccion.php",
@@ -21,6 +21,7 @@ $( document ).ready(function() {
             }
 
         });
+    //Agregarr recoleccion
 
     $(".addrecoleccion").click(function() {
         var recolector = $(".select_recolector").val();

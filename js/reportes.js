@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    // Ajax para recibir informacion actualizada de la recoleccion de arandanos
 
     jQuery.ajax({            
         method: "GET",

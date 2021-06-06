@@ -1,12 +1,16 @@
-$( document ).ready(function() {
+//JS PARA PAGINA INDEX.PHP
 
-    jQuery.ajax({
-            
+$( document ).ready(function() {
+    //Cuando cargue en su totalidad la pagina de inicio se dispara un ajax 
+    //para comunicarnos con la base de datos por medio del back
+
+    jQuery.ajax({            
         method: "POST",
         url: "servers/Usuarios.php",
         data: {opcion:"usuarios"}
     })
     .done(function(data) {
+        //Recibimos toda la data para llenar la tabla de usuarios
         
         var datos = JSON.parse(data);
         
@@ -23,8 +27,7 @@ $( document ).ready(function() {
         }
         
     });
-
-    console.log( "ready!" );
+//Funcion para agregar usuarios
     $(".adduser").click(function() {
         var nombres = $("#name").val();
         var apellidos = $("#apellidos").val();
@@ -37,7 +40,7 @@ $( document ).ready(function() {
             documento : documento,
             cargo : cargo,
         }
-        console.log(obj_user);
+        //Ajax para registro de usuarios
         jQuery.ajax({
             
             method: "POST",
@@ -45,6 +48,7 @@ $( document ).ready(function() {
             data: {obj_user, opcion:"registro"}
         })
         .done(function(msg) {
+            // respuesta
             if(msg == "true"){
                 alert("Usuario añadido");
                 window.location.reload();
