@@ -32,12 +32,13 @@
             <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="apellidos" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
-        </div></div>
-            <div class="col-md-6"><div class="mb-3">
             <label for="documento" class="form-label">Documento</label>
-            <input type="text" class="form-control" id="documento" aria-describedby="emailHelp">
+            <input type="text" class="form-control" maxlength="10" id="documento" aria-describedby="emailHelp">
+        </div></div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Cargo</label>

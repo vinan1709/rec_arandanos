@@ -9,7 +9,7 @@ $( document ).ready(function() {
         var datos = JSON.parse(data);
         if(datos != null){
             $('.txt_fecha').text(datos[0]);
-            $('.txt_cantidad').text(datos[1]+'KG');
+            $('.txt_cantidad').text(datos['cantidad_fruta'][0]+'KG');
             $('.txt_recolector').text(datos[2]);
             $('.txt_encargado').text(datos[3]);
         }
