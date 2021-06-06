@@ -62,7 +62,6 @@
             <th scope="col">Apellidos</th>
             <th scope="col">Documento</th>
             <th scope="col">Cargo</th>
-            <th scope="col">Opcion</th>
         </tr>
         </thead>
         <tbody class="cuerpo_tabla">

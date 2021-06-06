@@ -13,13 +13,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.php">Gestión de empleados</a>
+                        <a class="nav-link" aria-current="page" href="../index.php">Gestión de empleados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="recoleccion.php">Recolección</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reporte.php">Reporte</a>
+                        <a class="nav-link active" href="reporte.php">Reporte</a>
                     </li>
                 </ul>
             </div>
@@ -36,18 +36,18 @@
     <hr>
     <div class="row">
         <div class="col-md-2" style="text-align: center;"></div>
-        <div class="col-md-10"><h4>Fecha:</h4><p></p><br>     
-        <h4>Encargado:</h4><p></p> </div> 
+        <div class="col-md-10"><h4>Fecha:</h4><p class="txt_fecha"></p><br>
+        <h4>Encargado:</h4><p class="txt_encargado"></p> </div>
     </div>
     <div class="row">
-        <div class="col-md-6" style="text-align: center;"><h2>Mejor recolector</h2><img src="../img/star.png"><h4>Nombre</h4></div>        
+        <div class="col-md-6" style="text-align: center;"><h2>Mejor recolector</h2><img src="../img/star.png"><h4 class="txt_recolector"></h4></div>
         <div class="col-md-6" style="text-align: center;"><h2>Kilogramos recogidos</h2>
             <div><h3 style="padding: 1.5em 0.8em;
                              background: #560556;
                             width: fit-content;
                             margin: auto;
                             border-radius: 50%;
-                            color: white;">200kg</h3></div>
+                            color: white;" class="txt_cantidad"></h3></div>
         </div>    
     </div>
     

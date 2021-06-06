@@ -48,7 +48,7 @@ if($_REQUEST['opcion'] == 'modificar') { //Modificar Usuarios
 
 if($_REQUEST['opcion'] == 'consulta') { //consultar Usuario
 
-    $sql="select * from usuarios where ".$_REQUEST['id_user']."";
+    $sql="select * from usuarios";
 
     $consulta=mysqli_query($conexion, $sql);
 
