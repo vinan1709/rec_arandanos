@@ -8,6 +8,7 @@ require_once '../config/databaseconnect.php';
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="../js/recoleccion.js"></script>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

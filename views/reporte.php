@@ -5,6 +5,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="../js/reportes.js"></script>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -35,11 +36,10 @@
     <br>
     <hr>
     <div class="row">
-        <div class="col-md-2" style="text-align: center;"></div>
-        <div class="col-md-10"><h4>Fecha:</h4><p class="txt_fecha"></p><br>
-        <h4>Encargado:</h4><p class="txt_encargado"></p> </div>
+        <div class="col-md-10 text-line"><h4>Fecha:  </h4><p class="txt_fecha"></p></div>
+        <div class="col-md-10 text-line"><h4>Encargado:  </h4><p class="txt_encargado"></p></div>
     </div>
-    <div class="row">
+    <div class="row cont-info">
         <div class="col-md-6" style="text-align: center;"><h2>Mejor recolector</h2><img src="../img/star.png"><h4 class="txt_recolector"></h4></div>
         <div class="col-md-6" style="text-align: center;"><h2>Kilogramos recogidos</h2>
             <div><h3 style="padding: 1.5em 0.8em;

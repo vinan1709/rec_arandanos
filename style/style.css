@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    margin: 1em;
+}
+table{
+    margin-top: 2em;
+}
+.text-line{
+    display: flex;
+    align-items: baseline;
+    padding: 0 7em;
+}
+.cont-info{
+    margin-top: 2em;
+}
